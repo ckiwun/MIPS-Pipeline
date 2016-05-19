@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : MIPS_Pipeline
+Version: G-2012.06
+Date   : Thu Dec 26 17:27:36 2013
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/raid2_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db)
+
+Number of ports:                          203
+Number of nets:                           807
+Number of cells:                          272
+Number of combinational cells:            268
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         57
+Number of references:                      67
+
+Combinational area:       76014.662776
+Noncombinational area:    60159.250690
+Net Interconnect area:    1208252.998871
+
+Total cell area:          136173.913466
+Total area:               1344426.912337
+1

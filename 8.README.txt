@@ -1,0 +1,44 @@
+每個資料夾包含那個stage所跑出的檔案及report，
+若要重新執行僅需輸入以下指令：
+
+1.RTL:
+已經把所有的module都include到testfixture.v裡面了
+所以直接執行下面的command
+
+RTL-simulation command:
+ncverilog +access+r testfixture.v
+
+2.SYN:
+已經把所有的module都include到testfixture.v裡面了
+所以直接執行下面的command
+
+synthesis-simulation command:
+ncverilog +access+r testfixture.v tsmc13.v
+
+3.DFT：
+使用dft.tcl即可重新執行並跑出此stage的檔案。
+
+function mode simulation command:
+ncverilog +access+r tb_L2Cache.v tsmc13.v
+
+4.ATPG：
+使用atpg.tcl即可重新執行並跑出此stage的檔案。
+
+5.Placement and Route：
+design data子資料夾內為SOCE的input files
+./CHIP.v為SOCE寫出的netlist
+其餘檔案為post-layout simulation所需要的檔案
+
+post-layout simulation command:
+ncverilog +access+r tb_L2Cache.v tsmc13_neg.v tpz013g3.v
+
+6.DRC and LVS
+DRC.rep及lvs.rep為跑完的report
+CHIP.gds為layout檔案
+其餘檔案皆是重新執行DRC, LVS所需檔案
+
+DRC command：
+calibre -drc CL13S_8M.21d
+
+LVS command：
+calibre -lvs -spice layout.spi -hier -auto CL013G_1P8M.lvs

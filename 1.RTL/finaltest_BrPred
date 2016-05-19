@@ -1,0 +1,34 @@
+00100000 00001000 00000000 01100100
+00001000 00000000 00000000 00000100
+00000000 00000000 00000000 00000000
+00001000 00000000 00000000 00000010
+00100001 00001000 11111111 11111111
+00000001 00000000 01001000 00101010
+00010000 00001001 11111111 11111101
+00001000 00000000 00000000 00001001
+00001000 00000000 00000000 00000010
+00100000 00001010 00001101 01011101
+10101100 00001010 00000000 00000000
+00001000 00000000 00000000 00000010
+
+
+//Instruction Address, Label      Instruction                     Comment
+//-------------------------------------------------------------------------------------------------------
+//  0x00                          addi    $t0, $0, 100            //set $t0 to 100
+//  0x01                          j       Loop                    //jump to loop body
+//  0x02  Trap:                   nop                             //the program should never execute this instruction
+//  0x03                          j       Trap                    //a dead end trap
+//  0x04  Loop:                   addi    $t0, $t0, -1            //decrease &t0 by 1
+//  0x05                          slt     $t1, $t0, $0            //set $t1 to 1 if $t0 < 0
+//  0x06                          beq     $t1, $0, Loop           //branch back to loop body if $t1 == 0
+//  0x07                          j       Endofloop               //jump to the end of the program
+//  0x08                          j       Trap                    //the program should never execute this instruction
+//  0x09  Endofloop:              addi    $t2, $0, 0xd5d          //change the value in $t2 into "D5D"
+//  0x0A                          sw      $t2, r0, 0x0100         //store "D5D" into memory
+//  0x0B                          j       Trap                    //the program should never execute this instruction
+
+
+
+
+
+

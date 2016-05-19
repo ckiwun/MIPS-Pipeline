@@ -1,0 +1,58 @@
+Warning: Main library 'dw_foundation.sldb' does not specify the following units required for power: 'Leakage Power, Capacitance, Voltage, Time'. (PWR-424)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : MIPS_Pipeline
+Version: G-2012.06
+Date   : Thu Dec 26 17:27:37 2013
+****************************************
+
+
+Library(s) Used:
+
+    typical (File: /home/raid2_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+MIPS_Pipeline          tsmc13_wl10       slow
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = Unitless
+    Capacitance Units = Unitless
+    Time Units = Unitless
+    Dynamic Power Units = Unitless    (derived from V,C,T units)
+    Leakage Power Units = Unitless
+
+
+  Cell Internal Power  =   4.5093    (69%)
+  Net Switching Power  =   2.0321    (31%)
+                         ---------
+Total Dynamic Power    =   6.5414   (100%)
+
+Cell Leakage Power     = 43792048.0000 
+
+Error: Either dynamic power or leakage power, in the library, is unitless. Unable to display complete power group summary. (PWR-799)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000               NA   (     N/A)
+memory             0.0000            0.0000            0.0000               NA   (     N/A)
+black_box          0.0000            0.0000            0.0000               NA   (     N/A)
+clock_network      0.0000            0.0000            0.0000               NA   (     N/A)
+register           3.9776            0.3398        2.0310e+07               NA   (     N/A)
+sequential     3.3948e-04        6.4259e-05        1.1033e+04               NA   (     N/A)
+combinational      0.5314            1.6923        2.3471e+07               NA   (     N/A)
+--------------------------------------------------------------------------------------------------
+Total              4.5093            2.0321        4.3792e+07               NA        
+1

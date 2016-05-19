@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : MIPS_Pipeline
+Version: G-2012.06
+Date   : Wed Dec 25 19:45:20 2013
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'MIPS_Pipeline' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    typical (File: /home/raid2_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/typical.db)
+
+Number of ports:                          200
+Number of nets:                           833
+Number of cells:                          272
+Number of combinational cells:            268
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         57
+Number of references:                      67
+
+Combinational area:       71569.172197
+Noncombinational area:    50144.590530
+Net Interconnect area:    1014258.484741
+
+Total cell area:          121713.762727
+Total area:               1135972.247468
+1

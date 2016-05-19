@@ -1,0 +1,755 @@
+STIL 1.0 {
+    Design 2005;
+}
+Header {
+    Title "Minimal STIL for design `MIPS_Pipeline'";
+    Date "Mon Dec 30 11:59:46 2013";
+    Source "DFT Compiler G-2012.06";
+}
+Signals {
+    "DCACHE_rdata[0]" In;
+    "DCACHE_rdata[10]" In;
+    "DCACHE_rdata[11]" In;
+    "DCACHE_rdata[12]" In;
+    "DCACHE_rdata[13]" In;
+    "DCACHE_rdata[14]" In;
+    "DCACHE_rdata[15]" In;
+    "DCACHE_rdata[16]" In;
+    "DCACHE_rdata[17]" In;
+    "DCACHE_rdata[18]" In;
+    "DCACHE_rdata[19]" In;
+    "DCACHE_rdata[1]" In;
+    "DCACHE_rdata[20]" In;
+    "DCACHE_rdata[21]" In;
+    "DCACHE_rdata[22]" In;
+    "DCACHE_rdata[23]" In;
+    "DCACHE_rdata[24]" In;
+    "DCACHE_rdata[25]" In;
+    "DCACHE_rdata[26]" In;
+    "DCACHE_rdata[27]" In;
+    "DCACHE_rdata[28]" In;
+    "DCACHE_rdata[29]" In;
+    "DCACHE_rdata[2]" In;
+    "DCACHE_rdata[30]" In;
+    "DCACHE_rdata[31]" In;
+    "DCACHE_rdata[3]" In;
+    "DCACHE_rdata[4]" In;
+    "DCACHE_rdata[5]" In;
+    "DCACHE_rdata[6]" In;
+    "DCACHE_rdata[7]" In;
+    "DCACHE_rdata[8]" In;
+    "DCACHE_rdata[9]" In;
+    "DCACHE_stall" In;
+    "ICACHE_rdata[0]" In;
+    "ICACHE_rdata[10]" In;
+    "ICACHE_rdata[11]" In;
+    "ICACHE_rdata[12]" In;
+    "ICACHE_rdata[13]" In;
+    "ICACHE_rdata[14]" In;
+    "ICACHE_rdata[15]" In;
+    "ICACHE_rdata[16]" In;
+    "ICACHE_rdata[17]" In;
+    "ICACHE_rdata[18]" In;
+    "ICACHE_rdata[19]" In;
+    "ICACHE_rdata[1]" In;
+    "ICACHE_rdata[20]" In;
+    "ICACHE_rdata[21]" In;
+    "ICACHE_rdata[22]" In;
+    "ICACHE_rdata[23]" In;
+    "ICACHE_rdata[24]" In;
+    "ICACHE_rdata[25]" In;
+    "ICACHE_rdata[26]" In;
+    "ICACHE_rdata[27]" In;
+    "ICACHE_rdata[28]" In;
+    "ICACHE_rdata[29]" In;
+    "ICACHE_rdata[2]" In;
+    "ICACHE_rdata[30]" In;
+    "ICACHE_rdata[31]" In;
+    "ICACHE_rdata[3]" In;
+    "ICACHE_rdata[4]" In;
+    "ICACHE_rdata[5]" In;
+    "ICACHE_rdata[6]" In;
+    "ICACHE_rdata[7]" In;
+    "ICACHE_rdata[8]" In;
+    "ICACHE_rdata[9]" In;
+    "ICACHE_stall" In;
+    "clk" In;
+    "rst" In;
+    "DCACHE_addr[0]" Out;
+    "DCACHE_addr[10]" Out;
+    "DCACHE_addr[11]" Out;
+    "DCACHE_addr[12]" Out;
+    "DCACHE_addr[13]" Out;
+    "DCACHE_addr[14]" Out;
+    "DCACHE_addr[15]" Out;
+    "DCACHE_addr[16]" Out;
+    "DCACHE_addr[17]" Out;
+    "DCACHE_addr[18]" Out;
+    "DCACHE_addr[19]" Out;
+    "DCACHE_addr[1]" Out;
+    "DCACHE_addr[20]" Out;
+    "DCACHE_addr[21]" Out;
+    "DCACHE_addr[22]" Out;
+    "DCACHE_addr[23]" Out;
+    "DCACHE_addr[24]" Out;
+    "DCACHE_addr[25]" Out;
+    "DCACHE_addr[26]" Out;
+    "DCACHE_addr[27]" Out;
+    "DCACHE_addr[28]" Out;
+    "DCACHE_addr[29]" Out;
+    "DCACHE_addr[2]" Out;
+    "DCACHE_addr[30]" Out;
+    "DCACHE_addr[31]" Out;
+    "DCACHE_addr[3]" Out;
+    "DCACHE_addr[4]" Out;
+    "DCACHE_addr[5]" Out;
+    "DCACHE_addr[6]" Out;
+    "DCACHE_addr[7]" Out;
+    "DCACHE_addr[8]" Out;
+    "DCACHE_addr[9]" Out;
+    "DCACHE_ren" Out;
+    "DCACHE_wdata[0]" Out;
+    "DCACHE_wdata[10]" Out;
+    "DCACHE_wdata[11]" Out;
+    "DCACHE_wdata[12]" Out;
+    "DCACHE_wdata[13]" Out;
+    "DCACHE_wdata[14]" Out;
+    "DCACHE_wdata[15]" Out;
+    "DCACHE_wdata[16]" Out;
+    "DCACHE_wdata[17]" Out;
+    "DCACHE_wdata[18]" Out;
+    "DCACHE_wdata[19]" Out;
+    "DCACHE_wdata[1]" Out;
+    "DCACHE_wdata[20]" Out;
+    "DCACHE_wdata[21]" Out;
+    "DCACHE_wdata[22]" Out;
+    "DCACHE_wdata[23]" Out;
+    "DCACHE_wdata[24]" Out;
+    "DCACHE_wdata[25]" Out;
+    "DCACHE_wdata[26]" Out;
+    "DCACHE_wdata[27]" Out;
+    "DCACHE_wdata[28]" Out;
+    "DCACHE_wdata[29]" Out;
+    "DCACHE_wdata[2]" Out;
+    "DCACHE_wdata[30]" Out;
+    "DCACHE_wdata[31]" Out;
+    "DCACHE_wdata[3]" Out;
+    "DCACHE_wdata[4]" Out;
+    "DCACHE_wdata[5]" Out;
+    "DCACHE_wdata[6]" Out;
+    "DCACHE_wdata[7]" Out;
+    "DCACHE_wdata[8]" Out;
+    "DCACHE_wdata[9]" Out;
+    "DCACHE_wen" Out;
+    "ICACHE_addr[0]" Out;
+    "ICACHE_addr[10]" Out;
+    "ICACHE_addr[11]" Out;
+    "ICACHE_addr[12]" Out;
+    "ICACHE_addr[13]" Out;
+    "ICACHE_addr[14]" Out;
+    "ICACHE_addr[15]" Out;
+    "ICACHE_addr[16]" Out;
+    "ICACHE_addr[17]" Out;
+    "ICACHE_addr[18]" Out;
+    "ICACHE_addr[19]" Out;
+    "ICACHE_addr[1]" Out;
+    "ICACHE_addr[20]" Out;
+    "ICACHE_addr[21]" Out;
+    "ICACHE_addr[22]" Out;
+    "ICACHE_addr[23]" Out;
+    "ICACHE_addr[24]" Out;
+    "ICACHE_addr[25]" Out;
+    "ICACHE_addr[26]" Out;
+    "ICACHE_addr[27]" Out;
+    "ICACHE_addr[28]" Out;
+    "ICACHE_addr[29]" Out;
+    "ICACHE_addr[2]" Out;
+    "ICACHE_addr[30]" Out;
+    "ICACHE_addr[31]" Out;
+    "ICACHE_addr[3]" Out;
+    "ICACHE_addr[4]" Out;
+    "ICACHE_addr[5]" Out;
+    "ICACHE_addr[6]" Out;
+    "ICACHE_addr[7]" Out;
+    "ICACHE_addr[8]" Out;
+    "ICACHE_addr[9]" Out;
+    "ICACHE_ren" Out;
+    "ICACHE_wdata[0]" Out;
+    "ICACHE_wdata[10]" Out;
+    "ICACHE_wdata[11]" Out;
+    "ICACHE_wdata[12]" Out;
+    "ICACHE_wdata[13]" Out;
+    "ICACHE_wdata[14]" Out;
+    "ICACHE_wdata[15]" Out;
+    "ICACHE_wdata[16]" Out;
+    "ICACHE_wdata[17]" Out;
+    "ICACHE_wdata[18]" Out;
+    "ICACHE_wdata[19]" Out;
+    "ICACHE_wdata[1]" Out;
+    "ICACHE_wdata[20]" Out;
+    "ICACHE_wdata[21]" Out;
+    "ICACHE_wdata[22]" Out;
+    "ICACHE_wdata[23]" Out;
+    "ICACHE_wdata[24]" Out;
+    "ICACHE_wdata[25]" Out;
+    "ICACHE_wdata[26]" Out;
+    "ICACHE_wdata[27]" Out;
+    "ICACHE_wdata[28]" Out;
+    "ICACHE_wdata[29]" Out;
+    "ICACHE_wdata[2]" Out;
+    "ICACHE_wdata[30]" Out;
+    "ICACHE_wdata[31]" Out;
+    "ICACHE_wdata[3]" Out;
+    "ICACHE_wdata[4]" Out;
+    "ICACHE_wdata[5]" Out;
+    "ICACHE_wdata[6]" Out;
+    "ICACHE_wdata[7]" Out;
+    "ICACHE_wdata[8]" Out;
+    "ICACHE_wdata[9]" Out;
+    "ICACHE_wen" Out;
+    "test_si" In;
+    "test_so" Out;
+    "test_se" In;
+}
+SignalGroups {
+    "_si" = '"test_si"' {
+        ScanIn;
+    }
+    "_so" = '"test_so"' {
+        ScanOut;
+    }
+    "_clk" = '"clk" + "rst"';
+    "all_inputs" = '"DCACHE_rdata[0]" + "DCACHE_rdata[10]" + "DCACHE_rdata[11]" 
+    + "DCACHE_rdata[12]" + "DCACHE_rdata[13]" + "DCACHE_rdata[14]" + 
+    "DCACHE_rdata[15]" + "DCACHE_rdata[16]" + "DCACHE_rdata[17]" + 
+    "DCACHE_rdata[18]" + "DCACHE_rdata[19]" + "DCACHE_rdata[1]" + 
+    "DCACHE_rdata[20]" + "DCACHE_rdata[21]" + "DCACHE_rdata[22]" + 
+    "DCACHE_rdata[23]" + "DCACHE_rdata[24]" + "DCACHE_rdata[25]" + 
+    "DCACHE_rdata[26]" + "DCACHE_rdata[27]" + "DCACHE_rdata[28]" + 
+    "DCACHE_rdata[29]" + "DCACHE_rdata[2]" + "DCACHE_rdata[30]" + 
+    "DCACHE_rdata[31]" + "DCACHE_rdata[3]" + "DCACHE_rdata[4]" + 
+    "DCACHE_rdata[5]" + "DCACHE_rdata[6]" + "DCACHE_rdata[7]" + 
+    "DCACHE_rdata[8]" + "DCACHE_rdata[9]" + "DCACHE_stall" + "ICACHE_rdata[0]" + 
+    "ICACHE_rdata[10]" + "ICACHE_rdata[11]" + "ICACHE_rdata[12]" + 
+    "ICACHE_rdata[13]" + "ICACHE_rdata[14]" + "ICACHE_rdata[15]" + 
+    "ICACHE_rdata[16]" + "ICACHE_rdata[17]" + "ICACHE_rdata[18]" + 
+    "ICACHE_rdata[19]" + "ICACHE_rdata[1]" + "ICACHE_rdata[20]" + 
+    "ICACHE_rdata[21]" + "ICACHE_rdata[22]" + "ICACHE_rdata[23]" + 
+    "ICACHE_rdata[24]" + "ICACHE_rdata[25]" + "ICACHE_rdata[26]" + 
+    "ICACHE_rdata[27]" + "ICACHE_rdata[28]" + "ICACHE_rdata[29]" + 
+    "ICACHE_rdata[2]" + "ICACHE_rdata[30]" + "ICACHE_rdata[31]" + 
+    "ICACHE_rdata[3]" + "ICACHE_rdata[4]" + "ICACHE_rdata[5]" + 
+    "ICACHE_rdata[6]" + "ICACHE_rdata[7]" + "ICACHE_rdata[8]" + 
+    "ICACHE_rdata[9]" + "ICACHE_stall" + "clk" + "rst" + "test_si" + "test_se"';
+    "all_outputs" = '"DCACHE_addr[0]" + "DCACHE_addr[10]" + "DCACHE_addr[11]" + 
+    "DCACHE_addr[12]" + "DCACHE_addr[13]" + "DCACHE_addr[14]" + 
+    "DCACHE_addr[15]" + "DCACHE_addr[16]" + "DCACHE_addr[17]" + 
+    "DCACHE_addr[18]" + "DCACHE_addr[19]" + "DCACHE_addr[1]" + "DCACHE_addr[20]" 
+    + "DCACHE_addr[21]" + "DCACHE_addr[22]" + "DCACHE_addr[23]" + 
+    "DCACHE_addr[24]" + "DCACHE_addr[25]" + "DCACHE_addr[26]" + 
+    "DCACHE_addr[27]" + "DCACHE_addr[28]" + "DCACHE_addr[29]" + "DCACHE_addr[2]" 
+    + "DCACHE_addr[30]" + "DCACHE_addr[31]" + "DCACHE_addr[3]" + 
+    "DCACHE_addr[4]" + "DCACHE_addr[5]" + "DCACHE_addr[6]" + "DCACHE_addr[7]" + 
+    "DCACHE_addr[8]" + "DCACHE_addr[9]" + "DCACHE_ren" + "DCACHE_wdata[0]" + 
+    "DCACHE_wdata[10]" + "DCACHE_wdata[11]" + "DCACHE_wdata[12]" + 
+    "DCACHE_wdata[13]" + "DCACHE_wdata[14]" + "DCACHE_wdata[15]" + 
+    "DCACHE_wdata[16]" + "DCACHE_wdata[17]" + "DCACHE_wdata[18]" + 
+    "DCACHE_wdata[19]" + "DCACHE_wdata[1]" + "DCACHE_wdata[20]" + 
+    "DCACHE_wdata[21]" + "DCACHE_wdata[22]" + "DCACHE_wdata[23]" + 
+    "DCACHE_wdata[24]" + "DCACHE_wdata[25]" + "DCACHE_wdata[26]" + 
+    "DCACHE_wdata[27]" + "DCACHE_wdata[28]" + "DCACHE_wdata[29]" + 
+    "DCACHE_wdata[2]" + "DCACHE_wdata[30]" + "DCACHE_wdata[31]" + 
+    "DCACHE_wdata[3]" + "DCACHE_wdata[4]" + "DCACHE_wdata[5]" + 
+    "DCACHE_wdata[6]" + "DCACHE_wdata[7]" + "DCACHE_wdata[8]" + 
+    "DCACHE_wdata[9]" + "DCACHE_wen" + "ICACHE_addr[0]" + "ICACHE_addr[10]" + 
+    "ICACHE_addr[11]" + "ICACHE_addr[12]" + "ICACHE_addr[13]" + 
+    "ICACHE_addr[14]" + "ICACHE_addr[15]" + "ICACHE_addr[16]" + 
+    "ICACHE_addr[17]" + "ICACHE_addr[18]" + "ICACHE_addr[19]" + "ICACHE_addr[1]" 
+    + "ICACHE_addr[20]" + "ICACHE_addr[21]" + "ICACHE_addr[22]" + 
+    "ICACHE_addr[23]" + "ICACHE_addr[24]" + "ICACHE_addr[25]" + 
+    "ICACHE_addr[26]" + "ICACHE_addr[27]" + "ICACHE_addr[28]" + 
+    "ICACHE_addr[29]" + "ICACHE_addr[2]" + "ICACHE_addr[30]" + "ICACHE_addr[31]" 
+    + "ICACHE_addr[3]" + "ICACHE_addr[4]" + "ICACHE_addr[5]" + "ICACHE_addr[6]" 
+    + "ICACHE_addr[7]" + "ICACHE_addr[8]" + "ICACHE_addr[9]" + "ICACHE_ren" + 
+    "ICACHE_wdata[0]" + "ICACHE_wdata[10]" + "ICACHE_wdata[11]" + 
+    "ICACHE_wdata[12]" + "ICACHE_wdata[13]" + "ICACHE_wdata[14]" + 
+    "ICACHE_wdata[15]" + "ICACHE_wdata[16]" + "ICACHE_wdata[17]" + 
+    "ICACHE_wdata[18]" + "ICACHE_wdata[19]" + "ICACHE_wdata[1]" + 
+    "ICACHE_wdata[20]" + "ICACHE_wdata[21]" + "ICACHE_wdata[22]" + 
+    "ICACHE_wdata[23]" + "ICACHE_wdata[24]" + "ICACHE_wdata[25]" + 
+    "ICACHE_wdata[26]" + "ICACHE_wdata[27]" + "ICACHE_wdata[28]" + 
+    "ICACHE_wdata[29]" + "ICACHE_wdata[2]" + "ICACHE_wdata[30]" + 
+    "ICACHE_wdata[31]" + "ICACHE_wdata[3]" + "ICACHE_wdata[4]" + 
+    "ICACHE_wdata[5]" + "ICACHE_wdata[6]" + "ICACHE_wdata[7]" + 
+    "ICACHE_wdata[8]" + "ICACHE_wdata[9]" + "ICACHE_wen" + "test_so"';
+    "all_ports" = '"all_inputs" + "all_outputs"';
+    "_pi" = '"DCACHE_rdata[0]" + "DCACHE_rdata[10]" + "DCACHE_rdata[11]" + 
+    "DCACHE_rdata[12]" + "DCACHE_rdata[13]" + "DCACHE_rdata[14]" + 
+    "DCACHE_rdata[15]" + "DCACHE_rdata[16]" + "DCACHE_rdata[17]" + 
+    "DCACHE_rdata[18]" + "DCACHE_rdata[19]" + "DCACHE_rdata[1]" + 
+    "DCACHE_rdata[20]" + "DCACHE_rdata[21]" + "DCACHE_rdata[22]" + 
+    "DCACHE_rdata[23]" + "DCACHE_rdata[24]" + "DCACHE_rdata[25]" + 
+    "DCACHE_rdata[26]" + "DCACHE_rdata[27]" + "DCACHE_rdata[28]" + 
+    "DCACHE_rdata[29]" + "DCACHE_rdata[2]" + "DCACHE_rdata[30]" + 
+    "DCACHE_rdata[31]" + "DCACHE_rdata[3]" + "DCACHE_rdata[4]" + 
+    "DCACHE_rdata[5]" + "DCACHE_rdata[6]" + "DCACHE_rdata[7]" + 
+    "DCACHE_rdata[8]" + "DCACHE_rdata[9]" + "DCACHE_stall" + "ICACHE_rdata[0]" + 
+    "ICACHE_rdata[10]" + "ICACHE_rdata[11]" + "ICACHE_rdata[12]" + 
+    "ICACHE_rdata[13]" + "ICACHE_rdata[14]" + "ICACHE_rdata[15]" + 
+    "ICACHE_rdata[16]" + "ICACHE_rdata[17]" + "ICACHE_rdata[18]" + 
+    "ICACHE_rdata[19]" + "ICACHE_rdata[1]" + "ICACHE_rdata[20]" + 
+    "ICACHE_rdata[21]" + "ICACHE_rdata[22]" + "ICACHE_rdata[23]" + 
+    "ICACHE_rdata[24]" + "ICACHE_rdata[25]" + "ICACHE_rdata[26]" + 
+    "ICACHE_rdata[27]" + "ICACHE_rdata[28]" + "ICACHE_rdata[29]" + 
+    "ICACHE_rdata[2]" + "ICACHE_rdata[30]" + "ICACHE_rdata[31]" + 
+    "ICACHE_rdata[3]" + "ICACHE_rdata[4]" + "ICACHE_rdata[5]" + 
+    "ICACHE_rdata[6]" + "ICACHE_rdata[7]" + "ICACHE_rdata[8]" + 
+    "ICACHE_rdata[9]" + "ICACHE_stall" + "clk" + "rst" + "test_si" + "test_se"';
+    "_po" = '"DCACHE_addr[0]" + "DCACHE_addr[10]" + "DCACHE_addr[11]" + 
+    "DCACHE_addr[12]" + "DCACHE_addr[13]" + "DCACHE_addr[14]" + 
+    "DCACHE_addr[15]" + "DCACHE_addr[16]" + "DCACHE_addr[17]" + 
+    "DCACHE_addr[18]" + "DCACHE_addr[19]" + "DCACHE_addr[1]" + "DCACHE_addr[20]" 
+    + "DCACHE_addr[21]" + "DCACHE_addr[22]" + "DCACHE_addr[23]" + 
+    "DCACHE_addr[24]" + "DCACHE_addr[25]" + "DCACHE_addr[26]" + 
+    "DCACHE_addr[27]" + "DCACHE_addr[28]" + "DCACHE_addr[29]" + "DCACHE_addr[2]" 
+    + "DCACHE_addr[30]" + "DCACHE_addr[31]" + "DCACHE_addr[3]" + 
+    "DCACHE_addr[4]" + "DCACHE_addr[5]" + "DCACHE_addr[6]" + "DCACHE_addr[7]" + 
+    "DCACHE_addr[8]" + "DCACHE_addr[9]" + "DCACHE_ren" + "DCACHE_wdata[0]" + 
+    "DCACHE_wdata[10]" + "DCACHE_wdata[11]" + "DCACHE_wdata[12]" + 
+    "DCACHE_wdata[13]" + "DCACHE_wdata[14]" + "DCACHE_wdata[15]" + 
+    "DCACHE_wdata[16]" + "DCACHE_wdata[17]" + "DCACHE_wdata[18]" + 
+    "DCACHE_wdata[19]" + "DCACHE_wdata[1]" + "DCACHE_wdata[20]" + 
+    "DCACHE_wdata[21]" + "DCACHE_wdata[22]" + "DCACHE_wdata[23]" + 
+    "DCACHE_wdata[24]" + "DCACHE_wdata[25]" + "DCACHE_wdata[26]" + 
+    "DCACHE_wdata[27]" + "DCACHE_wdata[28]" + "DCACHE_wdata[29]" + 
+    "DCACHE_wdata[2]" + "DCACHE_wdata[30]" + "DCACHE_wdata[31]" + 
+    "DCACHE_wdata[3]" + "DCACHE_wdata[4]" + "DCACHE_wdata[5]" + 
+    "DCACHE_wdata[6]" + "DCACHE_wdata[7]" + "DCACHE_wdata[8]" + 
+    "DCACHE_wdata[9]" + "DCACHE_wen" + "ICACHE_addr[0]" + "ICACHE_addr[10]" + 
+    "ICACHE_addr[11]" + "ICACHE_addr[12]" + "ICACHE_addr[13]" + 
+    "ICACHE_addr[14]" + "ICACHE_addr[15]" + "ICACHE_addr[16]" + 
+    "ICACHE_addr[17]" + "ICACHE_addr[18]" + "ICACHE_addr[19]" + "ICACHE_addr[1]" 
+    + "ICACHE_addr[20]" + "ICACHE_addr[21]" + "ICACHE_addr[22]" + 
+    "ICACHE_addr[23]" + "ICACHE_addr[24]" + "ICACHE_addr[25]" + 
+    "ICACHE_addr[26]" + "ICACHE_addr[27]" + "ICACHE_addr[28]" + 
+    "ICACHE_addr[29]" + "ICACHE_addr[2]" + "ICACHE_addr[30]" + "ICACHE_addr[31]" 
+    + "ICACHE_addr[3]" + "ICACHE_addr[4]" + "ICACHE_addr[5]" + "ICACHE_addr[6]" 
+    + "ICACHE_addr[7]" + "ICACHE_addr[8]" + "ICACHE_addr[9]" + "ICACHE_ren" + 
+    "ICACHE_wdata[0]" + "ICACHE_wdata[10]" + "ICACHE_wdata[11]" + 
+    "ICACHE_wdata[12]" + "ICACHE_wdata[13]" + "ICACHE_wdata[14]" + 
+    "ICACHE_wdata[15]" + "ICACHE_wdata[16]" + "ICACHE_wdata[17]" + 
+    "ICACHE_wdata[18]" + "ICACHE_wdata[19]" + "ICACHE_wdata[1]" + 
+    "ICACHE_wdata[20]" + "ICACHE_wdata[21]" + "ICACHE_wdata[22]" + 
+    "ICACHE_wdata[23]" + "ICACHE_wdata[24]" + "ICACHE_wdata[25]" + 
+    "ICACHE_wdata[26]" + "ICACHE_wdata[27]" + "ICACHE_wdata[28]" + 
+    "ICACHE_wdata[29]" + "ICACHE_wdata[2]" + "ICACHE_wdata[30]" + 
+    "ICACHE_wdata[31]" + "ICACHE_wdata[3]" + "ICACHE_wdata[4]" + 
+    "ICACHE_wdata[5]" + "ICACHE_wdata[6]" + "ICACHE_wdata[7]" + 
+    "ICACHE_wdata[8]" + "ICACHE_wdata[9]" + "ICACHE_wen" + "test_so"';
+}
+ScanStructures {
+    ScanChain "1" {
+        ScanLength 1391;
+        ScanIn "test_si";
+        ScanOut "test_so";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+        ScanInversion 1;
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_multiclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+}
+Procedures {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = \r66 N 01NN;
+            "all_outputs" = \r133 X;
+        }
+        V {
+            "_pi" = \r70 #;
+            "_po" = \r133 #;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = \r66 N 01NN;
+            "all_outputs" = \r133 X;
+        }
+        V {
+            "_pi" = \r70 #;
+            "_po" = \r133 #;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = \r66 N 01NN;
+            "all_outputs" = \r133 X;
+        }
+        V {
+            "_pi" = \r70 #;
+            "_po" = \r133 #;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = \r66 N 01NN;
+            "all_outputs" = \r133 X;
+        }
+        V {
+            "_pi" = \r70 #;
+            "_po" = \r133 #;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r66 N 01NN;
+            "all_outputs" = \r133 X;
+        }
+        "Internal_scan_pre_shift" : V {
+            "test_se" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = P1;
+                "_si" = #;
+                "_so" = #;
+            }
+        }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r70 N;
+            "all_outputs" = \r133 X;
+        }
+        V {
+            "clk" = 0;
+            "rst" = 1;
+        }
+        V {
+        }
+    }
+}
+

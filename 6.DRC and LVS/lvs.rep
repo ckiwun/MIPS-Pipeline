@@ -1,0 +1,2832 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         lvs.rep
+LAYOUT NAME:              layout.spi ('CHIP')
+SOURCE NAME:              source.spi ('CHIP')
+RULE FILE:                CL013G_1P8M.lvs
+HCELL FILE:               (-automatch)
+CREATION TIME:            Fri Dec 27 16:56:30 2013
+CURRENT DIRECTORY:        /home/raid5_3/userb99/b99042/CVSD/final/Layout/LVS
+USER NAME:                b99042
+CALIBRE VERSION:          v2012.2_26.20    Thu Jun 14 11:53:18 PDT 2012
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Components with non-identical power or ground pins.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        CHIP                          CHIP
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VD33" "AVDDB" "DVDD" "VDDG" "AVDDG" "AHVDD" "AVDDBG" "AHVDDB" "VDD5V" "DHVDD" "TAVDDPST"
+                                          "TAVD33PST" "VDWELL" "AHVDDG" "AVDWELL" "AVDDR" "VDDSA" "TAVDD" "VDDPST" "TAVD33"
+                                          "AHVDDR" "HVDDWELL" "AHVDDWELL" "VDD" "AVDD" "IOVDD"
+   LVS GROUND NAME                        "DVSS" "VSSG" "AVSSG" "AHVSS" "AVSSBG" "AHVSSB" "DHVSS" "TAVSSPST" "AHVSSG" "AVSSR"
+                                          "VS33" "TAVSS" "VSSPST" "VSSUB" "AVSSUB" "AHVSSR" "GND" "AGND" "HVSSUB" "VSS" "AHVSSUB"
+                                          "AVSS" "AVSSB" "IOVSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    NONE
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     1000
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               AB RC RE RG
+   LVS REPORT OPTION                      S
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(n2)  l l 0
+   TRACE PROPERTY  mn(n2)  w w 0
+   TRACE PROPERTY  mn(nlv)  l l 0
+   TRACE PROPERTY  mn(nlv)  w w 0
+   TRACE PROPERTY  mn(n1lv)  l l 0
+   TRACE PROPERTY  mn(n1lv)  w w 0
+   TRACE PROPERTY  mn(nhl)  l l 0
+   TRACE PROPERTY  mn(nhl)  w w 0
+   TRACE PROPERTY  mn(n2lv)  l l 0
+   TRACE PROPERTY  mn(n2lv)  w w 0
+   TRACE PROPERTY  mn(nd)  l l 0
+   TRACE PROPERTY  mn(nd)  w w 0
+   TRACE PROPERTY  mn(nl)  l l 0
+   TRACE PROPERTY  mn(nl)  w w 0
+   TRACE PROPERTY  mn(nch_sram)  l l 0
+   TRACE PROPERTY  mn(nch_sram)  w w 0
+   TRACE PROPERTY  mn(nn)  l l 0
+   TRACE PROPERTY  mn(nn)  w w 0
+   TRACE PROPERTY  mn(nhv)  l l 0
+   TRACE PROPERTY  mn(nhv)  w w 0
+   TRACE PROPERTY  mn(nch_sram_hvt)  l l 0
+   TRACE PROPERTY  mn(nch_sram_hvt)  w w 0
+   TRACE PROPERTY  mn(n1hv)  l l 0
+   TRACE PROPERTY  mn(n1hv)  w w 0
+   TRACE PROPERTY  mn(n)  l l 0
+   TRACE PROPERTY  mn(n)  w w 0
+   TRACE PROPERTY  mn(n1)  l l 0
+   TRACE PROPERTY  mn(n1)  w w 0
+   TRACE PROPERTY  mp(p)  l l 0
+   TRACE PROPERTY  mp(p)  w w 0
+   TRACE PROPERTY  mp(plv)  l l 0
+   TRACE PROPERTY  mp(plv)  w w 0
+   TRACE PROPERTY  mp(phl)  l l 0
+   TRACE PROPERTY  mp(phl)  w w 0
+   TRACE PROPERTY  mp(pd)  l l 0
+   TRACE PROPERTY  mp(pd)  w w 0
+   TRACE PROPERTY  mp(pchpu_hvtsr_g)  l l 0
+   TRACE PROPERTY  mp(pchpu_hvtsr_g)  w w 0
+   TRACE PROPERTY  mp(pch_sram)  l l 0
+   TRACE PROPERTY  mp(pch_sram)  w w 0
+   TRACE PROPERTY  mp(phv)  l l 0
+   TRACE PROPERTY  mp(phv)  w w 0
+   TRACE PROPERTY  q(pv)  a a 0
+   TRACE PROPERTY  q(nv)  a a 0
+   TRACE PROPERTY  d(dpl)  a a 0
+   TRACE PROPERTY  d(dn)  a a 0
+   TRACE PROPERTY  d(d1n)  a a 0
+   TRACE PROPERTY  d(d2n)  a a 0
+   TRACE PROPERTY  d(dp)  a a 0
+   TRACE PROPERTY  d(d1)  a a 0
+   TRACE PROPERTY  d(db)  a a 0
+   TRACE PROPERTY  d(d2)  a a 0
+   TRACE PROPERTY  d(d3)  a a 0
+   TRACE PROPERTY  d(dnh)  a a 0
+   TRACE PROPERTY  d(dw)  a a 0
+   TRACE PROPERTY  d(dph)  a a 0
+   TRACE PROPERTY  d(dnl)  a a 0
+   TRACE PROPERTY  r(m3)  r r 0
+   TRACE PROPERTY  r(m4)  r r 0
+   TRACE PROPERTY  r(me)  r r 0
+   TRACE PROPERTY  r(m5)  r r 0
+   TRACE PROPERTY  r(m6)  r r 0
+   TRACE PROPERTY  r(m7)  r r 0
+   TRACE PROPERTY  r(m1)  r r 0
+   TRACE PROPERTY  r(m2)  r r 0
+   TRACE PROPERTY  nc1  wr wr 0
+   TRACE PROPERTY  nc1  lr lr 0
+   TRACE PROPERTY  nc2  wr wr 0
+   TRACE PROPERTY  nc2  lr lr 0
+   TRACE PROPERTY  r(nr)  r r 2
+   TRACE PROPERTY  pc1  wr wr 0
+   TRACE PROPERTY  pc1  lr lr 0
+   TRACE PROPERTY  r(ns)  r r 2
+   TRACE PROPERTY  pc2  wr wr 0
+   TRACE PROPERTY  pc2  lr lr 0
+   TRACE PROPERTY  r(nd)  r r 2
+   TRACE PROPERTY  r(pr)  r r 2
+   TRACE PROPERTY  r(ps)  r r 2
+   TRACE PROPERTY  r(pd)  r r 2
+   TRACE PROPERTY  r(wo)  r r 2
+   TRACE PROPERTY  r(ni)  r r 2
+   TRACE PROPERTY  r(wr)  r r 2
+   TRACE PROPERTY  r(pi)  r r 2
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  ADDFXL (7 pins): b a ci co vdd vss s
+Extra Pins:  VDD VSS
+Source Component Type:  ADDFXL (5 pins): a b ci co s
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AND2X2 (5 pins): a vdd b vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AND2X2 (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AND2XL (5 pins): a b vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AND2XL (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AND3X2 (6 pins): a b c vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AND3X2 (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AND3XL (6 pins): a b vss c vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AND3XL (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AND4X1 (7 pins): a b c vss d vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AND4X1 (5 pins): a b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  ANTENNA (3 pins): vss vdd a
+Extra Pins:  VSS VDD
+Source Component Type:  ANTENNA (1 pins): a
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AO21X1 (6 pins): a1 a0 b0 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AO21X1 (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AO21XL (6 pins): a1 a0 b0 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AO21XL (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AO22X1 (7 pins): b1 b0 a0 vss a1 vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AO22X1 (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AO22XL (7 pins): b1 b0 a0 a1 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  AO22XL (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI211X1 (7 pins): a1 vdd a0 c0 vss b0 y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI211X1 (5 pins): a0 a1 b0 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI211XL (7 pins): a1 vdd a0 c0 vss b0 y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI211XL (5 pins): a0 a1 b0 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI21X1 (6 pins): a1 a0 vdd b0 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI21X1 (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI21XL (6 pins): a1 vdd a0 b0 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI21XL (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI221XL (8 pins): b1 b0 vdd a0 a1 vss c0 y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI221XL (6 pins): a0 a1 b0 b1 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI222XL (9 pins): c0 c1 vdd b1 b0 a0 a1 y vss
+Extra Pins:  VDD VSS
+Source Component Type:  AOI222XL (7 pins): a0 a1 b0 b1 c0 c1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI22X1 (7 pins): b1 b0 vdd a0 a1 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI22X1 (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI22XL (7 pins): b1 b0 vdd a0 a1 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI22XL (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI2BB1X1 (6 pins): a0n a1n b0 vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI2BB1X1 (4 pins): a0n a1n b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI2BB1XL (6 pins): a0n a1n vdd b0 y vss
+Extra Pins:  VDD VSS
+Source Component Type:  AOI2BB1XL (4 pins): a0n a1n b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI2BB2X1 (7 pins): a1n a0n b1 vdd b0 y vss
+Extra Pins:  VDD VSS
+Source Component Type:  AOI2BB2X1 (5 pins): a0n a1n b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI2BB2XL (7 pins): a1n a0n vdd b1 b0 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI2BB2XL (5 pins): a0n a1n b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI31X1 (7 pins): a2 a1 vdd a0 b0 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI31X1 (5 pins): a0 a1 a2 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI32X1 (8 pins): a2 a1 vdd a0 b0 b1 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI32X1 (6 pins): a0 a1 a2 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  AOI32XL (8 pins): a2 a1 vdd a0 b0 b1 vss y
+Extra Pins:  VDD VSS
+Source Component Type:  AOI32XL (6 pins): a0 a1 a2 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  BUFX12 (4 pins): a y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  BUFX12 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  BUFX16 (4 pins): a y vdd vss
+Extra Pins:  VDD VSS
+Source Component Type:  BUFX16 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  BUFX2 (4 pins): a y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  BUFX2 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  BUFX4 (4 pins): a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  BUFX4 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKBUFX16 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKBUFX16 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKBUFX2 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKBUFX2 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKBUFX20 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKBUFX20 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKBUFX3 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKBUFX3 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKBUFX4 (4 pins): a y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKBUFX4 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKBUFX8 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKBUFX8 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKINVX1 (4 pins): a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  CLKINVX1 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKINVX12 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKINVX12 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKINVX16 (4 pins): a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  CLKINVX16 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKINVX20 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKINVX20 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKINVX3 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKINVX3 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKINVX8 (4 pins): a vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  CLKINVX8 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CLKMX2X2 (6 pins): s0 b a vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  CLKMX2X2 (4 pins): a b s0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  CMPR32X2 (7 pins): b a c co vss vdd s
+Extra Pins:  VSS VDD
+Source Component Type:  CMPR32X2 (5 pins): a b c co s
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  INVX1 (4 pins): a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  INVX1 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  INVX12 (4 pins): a y vdd vss
+Extra Pins:  VDD VSS
+Source Component Type:  INVX12 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  INVX16 (4 pins): a y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  INVX16 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  INVX2 (4 pins): a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  INVX2 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  INVX3 (4 pins): a y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  INVX3 (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  INVXL (4 pins): a vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  INVXL (2 pins): a y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MX2X1 (6 pins): s0 b a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  MX2X1 (4 pins): a b s0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MX2XL (6 pins): s0 b a vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  MX2XL (4 pins): a b s0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MX3X1 (8 pins): c s0 b a s1 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  MX3X1 (6 pins): a b c s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MX3XL (8 pins): s0 b a s1 c vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  MX3XL (6 pins): a b c s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MX4X1 (9 pins): c d s0 b a s1 vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  MX4X1 (7 pins): a b c d s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MX4XL (9 pins): c d s0 b a s1 vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  MX4XL (7 pins): a b c d s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI2X1 (6 pins): b s0 y a vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  MXI2X1 (4 pins): a b s0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI2X2 (6 pins): s0 b y a vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  MXI2X2 (4 pins): a b s0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI2XL (6 pins): b s0 y a vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  MXI2XL (4 pins): a b s0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI3X1 (8 pins): a s0 b c vss vdd s1 y
+Extra Pins:  VSS VDD
+Source Component Type:  MXI3X1 (6 pins): a b c s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI3XL (8 pins): a s0 b c vss vdd s1 y
+Extra Pins:  VSS VDD
+Source Component Type:  MXI3XL (6 pins): a b c s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI4X1 (9 pins): a b s0 d c s1 vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  MXI4X1 (7 pins): a b c d s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  MXI4XL (9 pins): a b s0 d c s1 vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  MXI4XL (7 pins): a b c d s0 s1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND2BX1 (5 pins): an b vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  NAND2BX1 (3 pins): an b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND2BXL (5 pins): an b vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  NAND2BXL (3 pins): an b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND2X1 (5 pins): b vss a y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  NAND2X1 (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND2XL (5 pins): b vss a y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  NAND2XL (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND3BX1 (6 pins): an vdd vss c b y
+Extra Pins:  VDD VSS
+Source Component Type:  NAND3BX1 (4 pins): an b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND3BXL (6 pins): an c vss b vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  NAND3BXL (4 pins): an b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND3X1 (6 pins): c vss b vdd a y
+Extra Pins:  VSS VDD
+Source Component Type:  NAND3X1 (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND3XL (6 pins): c vss b vdd a y
+Extra Pins:  VSS VDD
+Source Component Type:  NAND3XL (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND4BBXL (7 pins): bn d c y vdd an vss
+Extra Pins:  VDD VSS
+Source Component Type:  NAND4BBXL (5 pins): an bn c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND4BX1 (7 pins): an d vss c b y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  NAND4BX1 (5 pins): an b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND4X1 (7 pins): d vss c b a y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  NAND4X1 (5 pins): a b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NAND4XL (7 pins): d vss c b a y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  NAND4XL (5 pins): a b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR2BX1 (5 pins): an b vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  NOR2BX1 (3 pins): an b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR2BXL (5 pins): an b vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  NOR2BXL (3 pins): an b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR2X1 (5 pins): b vdd a y vss
+Extra Pins:  VDD VSS
+Source Component Type:  NOR2X1 (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR2XL (5 pins): b vdd a y vss
+Extra Pins:  VDD VSS
+Source Component Type:  NOR2XL (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR3BXL (6 pins): an c vdd b vss y
+Extra Pins:  VDD VSS
+Source Component Type:  NOR3BXL (4 pins): an b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR3X1 (6 pins): c vdd b vss a y
+Extra Pins:  VDD VSS
+Source Component Type:  NOR3X1 (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR3XL (6 pins): c vdd b vss a y
+Extra Pins:  VDD VSS
+Source Component Type:  NOR3XL (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR4BX1 (7 pins): an d vdd c b y vss
+Extra Pins:  VDD VSS
+Source Component Type:  NOR4BX1 (5 pins): an b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR4X1 (7 pins): d vdd c b a vss y
+Extra Pins:  VDD VSS
+Source Component Type:  NOR4X1 (5 pins): a b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  NOR4XL (7 pins): d vdd c b y vss a
+Extra Pins:  VDD VSS
+Source Component Type:  NOR4XL (5 pins): a b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OA21XL (6 pins): a1 a0 b0 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OA21XL (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OA22X1 (7 pins): a1 a0 b0 b1 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OA22X1 (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OA22XL (7 pins): a1 a0 b0 b1 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OA22XL (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI211X1 (7 pins): a1 a0 vss c0 vdd b0 y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI211X1 (5 pins): a0 a1 b0 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI211XL (7 pins): a1 vss a0 c0 vdd b0 y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI211XL (5 pins): a0 a1 b0 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI21X1 (6 pins): a1 a0 vss b0 vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI21X1 (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI21XL (6 pins): a1 a0 vss b0 vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI21XL (4 pins): a0 a1 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI221X1 (8 pins): b1 b0 vss a0 a1 vdd c0 y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI221X1 (6 pins): a0 a1 b0 b1 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI221X2 (8 pins): b0 b1 vss a0 a1 c0 y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  OAI221X2 (6 pins): a0 a1 b0 b1 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI221X4 (8 pins): b1 b0 a0 a1 c0 y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  OAI221X4 (6 pins): a0 a1 b0 b1 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI221XL (8 pins): b1 b0 vss a0 a1 vdd c0 y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI221XL (6 pins): a0 a1 b0 b1 c0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI222XL (9 pins): b1 b0 vss a0 a1 vdd c1 c0 y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI222XL (7 pins): a0 a1 b0 b1 c0 c1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI22XL (7 pins): b1 vss b0 a0 a1 y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  OAI22XL (5 pins): a0 a1 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI2BB1X1 (6 pins): a1n a0n b0 vss y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  OAI2BB1X1 (4 pins): a0n a1n b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI2BB1XL (6 pins): a1n a0n b0 vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI2BB1XL (4 pins): a0n a1n b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI2BB2XL (7 pins): a0n a1n b1 vss b0 vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI2BB2XL (5 pins): a0n a1n b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI31XL (7 pins): vss a2 a1 a0 b0 y vdd
+Extra Pins:  VSS VDD
+Source Component Type:  OAI31XL (5 pins): a0 a1 a2 b0 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI32X1 (8 pins): a2 a1 vss a0 b0 y vdd b1
+Extra Pins:  VSS VDD
+Source Component Type:  OAI32X1 (6 pins): a0 a1 a2 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI32XL (8 pins): a2 a1 vss a0 b0 y vdd b1
+Extra Pins:  VSS VDD
+Source Component Type:  OAI32XL (6 pins): a0 a1 a2 b0 b1 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OAI33X1 (9 pins): b2 b1 b0 vss a0 a1 a2 vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OAI33X1 (7 pins): a0 a1 a2 b0 b1 b2 y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OR2X1 (5 pins): a b vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OR2X1 (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OR2XL (5 pins): a b vss vdd y
+Extra Pins:  VSS VDD
+Source Component Type:  OR2XL (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OR3X2 (6 pins): a b c vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  OR3X2 (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OR3XL (6 pins): a b c vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  OR3XL (4 pins): a b c y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  OR4X1 (7 pins): a b c d vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  OR4X1 (5 pins): a b c d y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  SDFFNSRXL (10 pins): se si d ckn rn sn qn vss vdd q
+Extra Pins:  VSS VDD
+Source Component Type:  SDFFNSRXL (8 pins): ckn d q qn rn se si sn
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  SDFFRHQX8 (8 pins): ck se d si rn q vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  SDFFRHQX8 (6 pins): ck d q rn se si
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  SDFFRX2 (9 pins): d se si ck rn qn q vdd vss
+Extra Pins:  VDD VSS
+Source Component Type:  SDFFRX2 (7 pins): ck d q qn rn se si
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  SDFFRX4 (9 pins): d se si ck rn qn q vdd vss
+Extra Pins:  VDD VSS
+Source Component Type:  SDFFRX4 (7 pins): ck d q qn rn se si
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  SDFFRXL (9 pins): se d si ck rn qn vdd vss q
+Extra Pins:  VDD VSS
+Source Component Type:  SDFFRXL (7 pins): ck d q qn rn se si
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  SDFFSXL (9 pins): se si d ck sn qn vss vdd q
+Extra Pins:  VSS VDD
+Source Component Type:  SDFFSXL (7 pins): ck d q qn se si sn
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  TIEHI (3 pins): vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  TIEHI (1 pins): y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  TIELO (3 pins): vdd vss y
+Extra Pins:  VDD VSS
+Source Component Type:  TIELO (1 pins): y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  TLATX1 (6 pins): g d q vdd vss qn
+Extra Pins:  VDD VSS
+Source Component Type:  TLATX1 (4 pins): d g q qn
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  XNOR2X1 (5 pins): a b y vdd vss
+Extra Pins:  VDD VSS
+Source Component Type:  XNOR2X1 (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  XNOR2XL (5 pins): a b y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  XNOR2XL (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  XOR2X1 (5 pins): a b y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  XOR2X1 (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  XOR2XL (5 pins): a b y vss vdd
+Extra Pins:  VSS VDD
+Source Component Type:  XOR2XL (3 pins): a b y
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Component types with non-identical power or ground pins:
+
+      (Cells with the same ( or corresponding ) name that have different voltage
+       pin names are listed below.  Pins that do not appear in all corresponding
+       cells in both source and layout are ignored by the comparison algorithm.)
+
+Layout Component Type:  XOR3X1 (6 pins): a b c vdd y vss
+Extra Pins:  VDD VSS
+Source Component Type:  XOR3X1 (4 pins): a b c y
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         CHIP
+SOURCE CELL NAME:         CHIP
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            205       205
+
+ Nets:            9618      9672    *
+
+ Instances:         27        27         ADDFXL (5 pins)
+                    80        80         AND2X2 (3 pins)
+                    57        57         AND2XL (3 pins)
+                     5         5         AND3X2 (4 pins)
+                     3         3         AND3XL (4 pins)
+                     5         5         AND4X1 (5 pins)
+                     1         1         ANTENNA (1 pins)
+                    14        14         AO21X1 (4 pins)
+                     6         6         AO21XL (4 pins)
+                   139       139         AO22X1 (5 pins)
+                    15        15         AO22XL (5 pins)
+                    27        27         AOI211X1 (5 pins)
+                     6         6         AOI211XL (5 pins)
+                    44        44         AOI21X1 (4 pins)
+                    13        13         AOI21XL (4 pins)
+                    18        18         AOI221XL (6 pins)
+                    12        12         AOI222XL (7 pins)
+                    21        21         AOI22X1 (5 pins)
+                    28        28         AOI22XL (5 pins)
+                    23        23         AOI2BB1X1 (4 pins)
+                    42        42         AOI2BB1XL (4 pins)
+                    24        24         AOI2BB2X1 (5 pins)
+                    32        32         AOI2BB2XL (5 pins)
+                     1         1         AOI31X1 (5 pins)
+                     4         4         AOI32X1 (6 pins)
+                     3         3         AOI32XL (6 pins)
+                     2         2         BUFX12 (2 pins)
+                    10        10         BUFX16 (2 pins)
+                     4         4         BUFX2 (2 pins)
+                     3         3         BUFX4 (2 pins)
+                     3         3         CLKBUFX16 (2 pins)
+                   207       207         CLKBUFX2 (2 pins)
+                     5         5         CLKBUFX20 (2 pins)
+                   322       322         CLKBUFX3 (2 pins)
+                     8         8         CLKBUFX4 (2 pins)
+                     1         1         CLKBUFX8 (2 pins)
+                   490       490         CLKINVX1 (2 pins)
+                    27        27         CLKINVX12 (2 pins)
+                     1         1         CLKINVX16 (2 pins)
+                     1         1         CLKINVX20 (2 pins)
+                    51        51         CLKINVX3 (2 pins)
+                     3         3         CLKINVX8 (2 pins)
+                   231       231         CLKMX2X2 (4 pins)
+                     1         1         CMPR32X2 (5 pins)
+                    94        94         INVX1 (2 pins)
+                    61        61         INVX12 (2 pins)
+                    22        22         INVX16 (2 pins)
+                     8         8         INVX2 (2 pins)
+                    12        12         INVX3 (2 pins)
+                   308       308         INVXL (2 pins)
+                    11        11         MX2X1 (4 pins)
+                   114       114         MX2XL (4 pins)
+                     1         1         MX3X1 (6 pins)
+                    28        28         MX3XL (6 pins)
+                   115       115         MX4X1 (7 pins)
+                     1         1         MX4XL (7 pins)
+                  1172      1172         MXI2X1 (4 pins)
+                     7         7         MXI2X2 (4 pins)
+                    32        32         MXI2XL (4 pins)
+                    17        17         MXI3X1 (6 pins)
+                     6         6         MXI3XL (6 pins)
+                   459       459         MXI4X1 (7 pins)
+                    10        10         MXI4XL (7 pins)
+                    19        19         NAND2BX1 (3 pins)
+                     8         8         NAND2BXL (3 pins)
+                   353       353         NAND2X1 (3 pins)
+                   110       110         NAND2XL (3 pins)
+                     7         7         NAND3BX1 (4 pins)
+                     6         6         NAND3BXL (4 pins)
+                     4         4         NAND3X1 (4 pins)
+                     3         3         NAND3XL (4 pins)
+                     3         3         NAND4BBXL (5 pins)
+                    20        20         NAND4BX1 (5 pins)
+                    38        38         NAND4X1 (5 pins)
+                     6         6         NAND4XL (5 pins)
+                    89        89         NOR2BX1 (3 pins)
+                     6         6         NOR2BXL (3 pins)
+                   330       330         NOR2X1 (3 pins)
+                    48        48         NOR2XL (3 pins)
+                     2         2         NOR3BXL (4 pins)
+                    11        11         NOR3X1 (4 pins)
+                     4         4         NOR3XL (4 pins)
+                     2         2         NOR4BX1 (5 pins)
+                    15        15         NOR4X1 (5 pins)
+                     3         3         NOR4XL (5 pins)
+                    10        10         OA21XL (4 pins)
+                   110       110         OA22X1 (5 pins)
+                    13        13         OA22XL (5 pins)
+                    29        29         OAI211X1 (5 pins)
+                     2         2         OAI211XL (5 pins)
+                     1         1         OAI21X1 (4 pins)
+                    99        99         OAI21XL (4 pins)
+                    18        18         OAI221X1 (6 pins)
+                    16        16         OAI221X2 (6 pins)
+                    10        10         OAI221X4 (6 pins)
+                   138       138         OAI221XL (6 pins)
+                     9         9         OAI222XL (7 pins)
+                    23        23         OAI22XL (5 pins)
+                     3         3         OAI2BB1X1 (4 pins)
+                     4         4         OAI2BB1XL (4 pins)
+                    75        75         OAI2BB2XL (5 pins)
+                     4         4         OAI31XL (5 pins)
+                     5         5         OAI32X1 (6 pins)
+                     5         5         OAI32XL (6 pins)
+                     1         1         OAI33X1 (7 pins)
+                    23        23         OR2X1 (3 pins)
+                     8         8         OR2XL (3 pins)
+                     6         6         OR3X2 (4 pins)
+                     1         1         OR3XL (4 pins)
+                     6         6         OR4X1 (5 pins)
+                    70        70         PDIDGZ (2 pins)
+                   133       133         PDO02CDG (2 pins)
+                   992       992         SDFFNSRXL (8 pins)
+                     2         2         SDFFRHQX8 (6 pins)
+                     6         6         SDFFRX2 (7 pins)
+                     1         1         SDFFRX4 (7 pins)
+                   388       388         SDFFRXL (7 pins)
+                     2         2         SDFFSXL (7 pins)
+                   101       101         TIEHI (1 pins)
+                     9         9         TIELO (1 pins)
+                     2         2         TLATX1 (4 pins)
+                    72        72         XNOR2X1 (3 pins)
+                    22        22         XNOR2XL (3 pins)
+                    54        54         XOR2X1 (3 pins)
+                    68        68         XOR2XL (3 pins)
+                     1         1         XOR3X1 (4 pins)
+                ------    ------
+ Total Inst:      8127      8127
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:            205       205
+
+ Nets:            9617      9617
+
+ Instances:         27        27         ADDFXL (5 pins)
+                    80        80         AND2X2 (3 pins)
+                    57        57         AND2XL (3 pins)
+                     5         5         AND3X2 (4 pins)
+                     3         3         AND3XL (4 pins)
+                     5         5         AND4X1 (5 pins)
+                     1         1         ANTENNA (1 pins)
+                    14        14         AO21X1 (4 pins)
+                     6         6         AO21XL (4 pins)
+                   139       139         AO22X1 (5 pins)
+                    15        15         AO22XL (5 pins)
+                    27        27         AOI211X1 (5 pins)
+                     6         6         AOI211XL (5 pins)
+                    44        44         AOI21X1 (4 pins)
+                    13        13         AOI21XL (4 pins)
+                    18        18         AOI221XL (6 pins)
+                    12        12         AOI222XL (7 pins)
+                    21        21         AOI22X1 (5 pins)
+                    28        28         AOI22XL (5 pins)
+                    23        23         AOI2BB1X1 (4 pins)
+                    42        42         AOI2BB1XL (4 pins)
+                    24        24         AOI2BB2X1 (5 pins)
+                    32        32         AOI2BB2XL (5 pins)
+                     1         1         AOI31X1 (5 pins)
+                     4         4         AOI32X1 (6 pins)
+                     3         3         AOI32XL (6 pins)
+                     2         2         BUFX12 (2 pins)
+                    10        10         BUFX16 (2 pins)
+                     4         4         BUFX2 (2 pins)
+                     3         3         BUFX4 (2 pins)
+                     3         3         CLKBUFX16 (2 pins)
+                   207       207         CLKBUFX2 (2 pins)
+                     5         5         CLKBUFX20 (2 pins)
+                   322       322         CLKBUFX3 (2 pins)
+                     8         8         CLKBUFX4 (2 pins)
+                     1         1         CLKBUFX8 (2 pins)
+                   490       490         CLKINVX1 (2 pins)
+                    27        27         CLKINVX12 (2 pins)
+                     1         1         CLKINVX16 (2 pins)
+                     1         1         CLKINVX20 (2 pins)
+                    51        51         CLKINVX3 (2 pins)
+                     3         3         CLKINVX8 (2 pins)
+                   231       231         CLKMX2X2 (4 pins)
+                     1         1         CMPR32X2 (5 pins)
+                    94        94         INVX1 (2 pins)
+                    61        61         INVX12 (2 pins)
+                    22        22         INVX16 (2 pins)
+                     8         8         INVX2 (2 pins)
+                    12        12         INVX3 (2 pins)
+                   308       308         INVXL (2 pins)
+                    11        11         MX2X1 (4 pins)
+                   114       114         MX2XL (4 pins)
+                     1         1         MX3X1 (6 pins)
+                    28        28         MX3XL (6 pins)
+                   115       115         MX4X1 (7 pins)
+                     1         1         MX4XL (7 pins)
+                  1172      1172         MXI2X1 (4 pins)
+                     7         7         MXI2X2 (4 pins)
+                    32        32         MXI2XL (4 pins)
+                    17        17         MXI3X1 (6 pins)
+                     6         6         MXI3XL (6 pins)
+                   459       459         MXI4X1 (7 pins)
+                    10        10         MXI4XL (7 pins)
+                    19        19         NAND2BX1 (3 pins)
+                     8         8         NAND2BXL (3 pins)
+                   353       353         NAND2X1 (3 pins)
+                   110       110         NAND2XL (3 pins)
+                     7         7         NAND3BX1 (4 pins)
+                     6         6         NAND3BXL (4 pins)
+                     4         4         NAND3X1 (4 pins)
+                     3         3         NAND3XL (4 pins)
+                     3         3         NAND4BBXL (5 pins)
+                    20        20         NAND4BX1 (5 pins)
+                    38        38         NAND4X1 (5 pins)
+                     6         6         NAND4XL (5 pins)
+                    89        89         NOR2BX1 (3 pins)
+                     6         6         NOR2BXL (3 pins)
+                   330       330         NOR2X1 (3 pins)
+                    48        48         NOR2XL (3 pins)
+                     2         2         NOR3BXL (4 pins)
+                    11        11         NOR3X1 (4 pins)
+                     4         4         NOR3XL (4 pins)
+                     2         2         NOR4BX1 (5 pins)
+                    15        15         NOR4X1 (5 pins)
+                     3         3         NOR4XL (5 pins)
+                    10        10         OA21XL (4 pins)
+                   110       110         OA22X1 (5 pins)
+                    13        13         OA22XL (5 pins)
+                    29        29         OAI211X1 (5 pins)
+                     2         2         OAI211XL (5 pins)
+                     1         1         OAI21X1 (4 pins)
+                    99        99         OAI21XL (4 pins)
+                    18        18         OAI221X1 (6 pins)
+                    16        16         OAI221X2 (6 pins)
+                    10        10         OAI221X4 (6 pins)
+                   138       138         OAI221XL (6 pins)
+                     9         9         OAI222XL (7 pins)
+                    23        23         OAI22XL (5 pins)
+                     3         3         OAI2BB1X1 (4 pins)
+                     4         4         OAI2BB1XL (4 pins)
+                    75        75         OAI2BB2XL (5 pins)
+                     4         4         OAI31XL (5 pins)
+                     5         5         OAI32X1 (6 pins)
+                     5         5         OAI32XL (6 pins)
+                     1         1         OAI33X1 (7 pins)
+                    23        23         OR2X1 (3 pins)
+                     8         8         OR2XL (3 pins)
+                     6         6         OR3X2 (4 pins)
+                     1         1         OR3XL (4 pins)
+                     6         6         OR4X1 (5 pins)
+                    70        70         PDIDGZ (2 pins)
+                   133       133         PDO02CDG (2 pins)
+                   992       992         SDFFNSRXL (8 pins)
+                     2         2         SDFFRHQX8 (6 pins)
+                     6         6         SDFFRX2 (7 pins)
+                     1         1         SDFFRX4 (7 pins)
+                   388       388         SDFFRXL (7 pins)
+                     2         2         SDFFSXL (7 pins)
+                   101       101         TIEHI (1 pins)
+                     9         9         TIELO (1 pins)
+                     2         2         TLATX1 (4 pins)
+                    72        72         XNOR2X1 (3 pins)
+                    22        22         XNOR2XL (3 pins)
+                    54        54         XOR2X1 (3 pins)
+                    68        68         XOR2XL (3 pins)
+                     1         1         XOR3X1 (4 pins)
+                ------    ------
+ Total Inst:      8127      8127
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:             205        205            0            0
+
+   Nets:             9617       9617            0            0
+
+   Instances:          27         27            0            0    ADDFXL
+                       80         80            0            0    AND2X2
+                       57         57            0            0    AND2XL
+                        5          5            0            0    AND3X2
+                        3          3            0            0    AND3XL
+                        5          5            0            0    AND4X1
+                        1          1            0            0    ANTENNA
+                       14         14            0            0    AO21X1
+                        6          6            0            0    AO21XL
+                      139        139            0            0    AO22X1
+                       15         15            0            0    AO22XL
+                       27         27            0            0    AOI211X1
+                        6          6            0            0    AOI211XL
+                       44         44            0            0    AOI21X1
+                       13         13            0            0    AOI21XL
+                       18         18            0            0    AOI221XL
+                       12         12            0            0    AOI222XL
+                       21         21            0            0    AOI22X1
+                       28         28            0            0    AOI22XL
+                       23         23            0            0    AOI2BB1X1
+                       42         42            0            0    AOI2BB1XL
+                       24         24            0            0    AOI2BB2X1
+                       32         32            0            0    AOI2BB2XL
+                        1          1            0            0    AOI31X1
+                        4          4            0            0    AOI32X1
+                        3          3            0            0    AOI32XL
+                        2          2            0            0    BUFX12
+                       10         10            0            0    BUFX16
+                        4          4            0            0    BUFX2
+                        3          3            0            0    BUFX4
+                        3          3            0            0    CLKBUFX16
+                      207        207            0            0    CLKBUFX2
+                        5          5            0            0    CLKBUFX20
+                      322        322            0            0    CLKBUFX3
+                        8          8            0            0    CLKBUFX4
+                        1          1            0            0    CLKBUFX8
+                      490        490            0            0    CLKINVX1
+                       27         27            0            0    CLKINVX12
+                        1          1            0            0    CLKINVX16
+                        1          1            0            0    CLKINVX20
+                       51         51            0            0    CLKINVX3
+                        3          3            0            0    CLKINVX8
+                      231        231            0            0    CLKMX2X2
+                        1          1            0            0    CMPR32X2
+                       94         94            0            0    INVX1
+                       61         61            0            0    INVX12
+                       22         22            0            0    INVX16
+                        8          8            0            0    INVX2
+                       12         12            0            0    INVX3
+                      308        308            0            0    INVXL
+                       11         11            0            0    MX2X1
+                      114        114            0            0    MX2XL
+                        1          1            0            0    MX3X1
+                       28         28            0            0    MX3XL
+                      115        115            0            0    MX4X1
+                        1          1            0            0    MX4XL
+                     1172       1172            0            0    MXI2X1
+                        7          7            0            0    MXI2X2
+                       32         32            0            0    MXI2XL
+                       17         17            0            0    MXI3X1
+                        6          6            0            0    MXI3XL
+                      459        459            0            0    MXI4X1
+                       10         10            0            0    MXI4XL
+                       19         19            0            0    NAND2BX1
+                        8          8            0            0    NAND2BXL
+                      353        353            0            0    NAND2X1
+                      110        110            0            0    NAND2XL
+                        7          7            0            0    NAND3BX1
+                        6          6            0            0    NAND3BXL
+                        4          4            0            0    NAND3X1
+                        3          3            0            0    NAND3XL
+                        3          3            0            0    NAND4BBXL
+                       20         20            0            0    NAND4BX1
+                       38         38            0            0    NAND4X1
+                        6          6            0            0    NAND4XL
+                       89         89            0            0    NOR2BX1
+                        6          6            0            0    NOR2BXL
+                      330        330            0            0    NOR2X1
+                       48         48            0            0    NOR2XL
+                        2          2            0            0    NOR3BXL
+                       11         11            0            0    NOR3X1
+                        4          4            0            0    NOR3XL
+                        2          2            0            0    NOR4BX1
+                       15         15            0            0    NOR4X1
+                        3          3            0            0    NOR4XL
+                       10         10            0            0    OA21XL
+                      110        110            0            0    OA22X1
+                       13         13            0            0    OA22XL
+                       29         29            0            0    OAI211X1
+                        2          2            0            0    OAI211XL
+                        1          1            0            0    OAI21X1
+                       99         99            0            0    OAI21XL
+                       18         18            0            0    OAI221X1
+                       16         16            0            0    OAI221X2
+                       10         10            0            0    OAI221X4
+                      138        138            0            0    OAI221XL
+                        9          9            0            0    OAI222XL
+                       23         23            0            0    OAI22XL
+                        3          3            0            0    OAI2BB1X1
+                        4          4            0            0    OAI2BB1XL
+                       75         75            0            0    OAI2BB2XL
+                        4          4            0            0    OAI31XL
+                        5          5            0            0    OAI32X1
+                        5          5            0            0    OAI32XL
+                        1          1            0            0    OAI33X1
+                       23         23            0            0    OR2X1
+                        8          8            0            0    OR2XL
+                        6          6            0            0    OR3X2
+                        1          1            0            0    OR3XL
+                        6          6            0            0    OR4X1
+                       70         70            0            0    PDIDGZ
+                      133        133            0            0    PDO02CDG
+                      992        992            0            0    SDFFNSRXL
+                        2          2            0            0    SDFFRHQX8
+                        6          6            0            0    SDFFRX2
+                        1          1            0            0    SDFFRX4
+                      388        388            0            0    SDFFRXL
+                        2          2            0            0    SDFFSXL
+                      101        101            0            0    TIEHI
+                        9          9            0            0    TIELO
+                        2          2            0            0    TLATX1
+                       72         72            0            0    XNOR2X1
+                       22         22            0            0    XNOR2XL
+                       54         54            0            0    XOR2X1
+                       68         68            0            0    XOR2XL
+                        1          1            0            0    XOR3X1
+                  -------    -------    ---------    ---------
+   Total Inst:       8127       8127            0            0
+
+
+o Statistics:
+
+   2 passthrough source nets were found.
+
+   23 source nets were deep shorted to 11.
+
+   1 layout net had all its pins removed and was deleted.
+   9 source nets had all their pins removed and were deleted.
+
+   2 layout nets were reduced to passthrough nets.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD VSS DCACHE_rdata[13] DCACHE_rdata[16] DCACHE_rdata[15] DCACHE_rdata[14]
+                 DCACHE_rdata[17] DCACHE_rdata[18] DCACHE_rdata[22] DCACHE_rdata[21]
+                 DCACHE_rdata[20] DCACHE_rdata[19] DCACHE_rdata[23] DCACHE_rdata[26]
+                 DCACHE_rdata[25] DCACHE_rdata[24] DCACHE_rdata[27] DCACHE_rdata[28] test_so
+                 DCACHE_wen DCACHE_ren ICACHE_wen ICACHE_ren DCACHE_rdata[31] DCACHE_rdata[30]
+                 DCACHE_rdata[29] ICACHE_addr[7] ICACHE_addr[6] ICACHE_addr[5] ICACHE_addr[4]
+                 ICACHE_addr[3] ICACHE_addr[2] ICACHE_addr[1] ICACHE_addr[0] ICACHE_addr[8]
+                 ICACHE_addr[16] ICACHE_addr[15] ICACHE_addr[14] ICACHE_addr[13] ICACHE_addr[12]
+                 ICACHE_addr[11] ICACHE_addr[10] ICACHE_addr[9] ICACHE_addr[17] ICACHE_addr[26]
+                 ICACHE_addr[25] ICACHE_addr[24] ICACHE_addr[23] ICACHE_addr[22] ICACHE_addr[21]
+                 ICACHE_addr[20] ICACHE_addr[19] ICACHE_addr[18] DCACHE_rdata[12]
+                 ICACHE_addr[27] ICACHE_rdata[0] ICACHE_rdata[1] ICACHE_rdata[2] ICACHE_rdata[3]
+                 ICACHE_rdata[4] ICACHE_rdata[5] ICACHE_rdata[6] ICACHE_rdata[7] ICACHE_rdata[8]
+                 ICACHE_rdata[9] ICACHE_rdata[10] ICACHE_rdata[11] ICACHE_rdata[12]
+                 ICACHE_rdata[13] ICACHE_rdata[14] ICACHE_rdata[15] ICACHE_rdata[16]
+                 ICACHE_rdata[17] ICACHE_rdata[18] ICACHE_rdata[19] ICACHE_rdata[20]
+                 ICACHE_rdata[21] ICACHE_rdata[22] ICACHE_rdata[23] ICACHE_rdata[24]
+                 ICACHE_rdata[25] ICACHE_rdata[26] ICACHE_rdata[27] ICACHE_rdata[28]
+                 ICACHE_rdata[29] ICACHE_rdata[30] ICACHE_rdata[31] clk rst ICACHE_stall
+                 DCACHE_stall test_si test_se DCACHE_rdata[0] DCACHE_rdata[1] DCACHE_rdata[2]
+                 DCACHE_rdata[3] DCACHE_rdata[4] DCACHE_rdata[5] DCACHE_rdata[6] DCACHE_rdata[7]
+                 DCACHE_rdata[8] DCACHE_rdata[9] DCACHE_rdata[10] DCACHE_rdata[11]
+                 ICACHE_wdata[12] ICACHE_wdata[11] ICACHE_wdata[10] ICACHE_wdata[9]
+                 ICACHE_wdata[8] ICACHE_wdata[7] ICACHE_wdata[6] ICACHE_wdata[5] ICACHE_wdata[4]
+                 ICACHE_wdata[3] ICACHE_wdata[2] ICACHE_wdata[1] ICACHE_wdata[0] DCACHE_addr[31]
+                 DCACHE_addr[30] DCACHE_addr[29] DCACHE_addr[28] DCACHE_addr[27] DCACHE_addr[26]
+                 DCACHE_addr[25] DCACHE_addr[24] DCACHE_addr[23] DCACHE_addr[22] DCACHE_addr[21]
+                 DCACHE_addr[20] DCACHE_addr[19] DCACHE_addr[18] DCACHE_addr[17] DCACHE_addr[16]
+                 DCACHE_addr[15] DCACHE_addr[14] DCACHE_addr[13] DCACHE_addr[12] DCACHE_addr[11]
+                 DCACHE_addr[10] DCACHE_addr[9] DCACHE_addr[8] DCACHE_addr[7] DCACHE_addr[6]
+                 DCACHE_addr[5] DCACHE_addr[4] DCACHE_addr[3] DCACHE_addr[2] DCACHE_addr[1]
+                 DCACHE_addr[0] ICACHE_addr[31] ICACHE_addr[30] ICACHE_addr[29] ICACHE_addr[28]
+                 ICACHE_wdata[17] ICACHE_wdata[16] ICACHE_wdata[15] ICACHE_wdata[14]
+                 ICACHE_wdata[13] ICACHE_wdata[22] ICACHE_wdata[21] ICACHE_wdata[20]
+                 ICACHE_wdata[19] ICACHE_wdata[18] ICACHE_wdata[27] ICACHE_wdata[26]
+                 ICACHE_wdata[25] ICACHE_wdata[24] ICACHE_wdata[23] DCACHE_wdata[5]
+                 DCACHE_wdata[4] DCACHE_wdata[3] DCACHE_wdata[2] DCACHE_wdata[1] DCACHE_wdata[0]
+                 ICACHE_wdata[31] ICACHE_wdata[30] ICACHE_wdata[29] ICACHE_wdata[28]
+                 DCACHE_wdata[12] DCACHE_wdata[11] DCACHE_wdata[10] DCACHE_wdata[9]
+                 DCACHE_wdata[8] DCACHE_wdata[7] DCACHE_wdata[6] DCACHE_wdata[21]
+                 DCACHE_wdata[20] DCACHE_wdata[19] DCACHE_wdata[18] DCACHE_wdata[17]
+                 DCACHE_wdata[16] DCACHE_wdata[15] DCACHE_wdata[14] DCACHE_wdata[13]
+                 DCACHE_wdata[31] DCACHE_wdata[30] DCACHE_wdata[29] DCACHE_wdata[28]
+                 DCACHE_wdata[27] DCACHE_wdata[26] DCACHE_wdata[25] DCACHE_wdata[24]
+                 DCACHE_wdata[23] DCACHE_wdata[22]
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      1 sec
+Total Elapsed Time:  2 sec
